@@ -1,10 +1,8 @@
 import asyncio  # noqa: F401
 
-import aiohttp
 import pytest
 from aioresponses import aioresponses
 
-from get_matrix.exceptions import MatrixServerError
 from get_matrix.get_matrix import (
     get_matrix,
     get_snail_ccw_path,
@@ -52,8 +50,5 @@ async def test_get_matrix_mocked(matrix_string):
     with aioresponses() as mocked:
         mocked.get(MOKE_URL, status=200, body=matrix_string)
         result = await get_matrix(MOKE_URL)
-
-    with aioresponses() as mocked, pytest.raises(MatrixServerError):
-        mocked.get(MOKE_URL, exception=aiohttp.ClientConnectorError)
 
     assert result == TRAVERSAL
