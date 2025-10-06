@@ -4,12 +4,12 @@ import aiohttp
 from aiohttp import ClientSession
 
 from get_matrix.exceptions import (
-    MatrixDownloadError,
     MatrixConnectionError,
     MatrixContentTypeError,
+    MatrixDownloadError,
     MatrixInvalidUrlError,
-    MatrixTimeoutError,
     MatrixServerError,
+    MatrixTimeoutError,
 )
 
 EXCEPTION_MAP = {
