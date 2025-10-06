@@ -1,6 +1,6 @@
 # Тестовое задание по python
 
-[![Actions Status](https://github.com/toro89rus/python-project-83/actions/workflows/lint-and-test.yml/badge.svg)](https://github.com/toro89rus/python-project-83/actions)
+[![Linter and test status](https://github.com/toro89rus/test-assignments/actions/workflows/avito-tech.yml/badge.svg)](https://github.com/toro89rus/test-assignments/actions/workflows/avito-tech.yml)
 
 ## Условие
 
