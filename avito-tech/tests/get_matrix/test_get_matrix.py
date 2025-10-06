@@ -1,17 +1,15 @@
 import asyncio  # noqa: F401
 
-
 import aiohttp
 import pytest
 from aioresponses import aioresponses
 
+from get_matrix.exceptions import MatrixServerError
 from get_matrix.get_matrix import (
     get_matrix,
     get_snail_ccw_path,
     parse_matrix_string,
 )
-
-from get_matrix.exceptions import MatrixServerError
 
 MOKE_URL = "https://example.com/matrix.txt"
 
