@@ -20,10 +20,10 @@ jobs:
               with:
                     python-version: '3.x'
             - name: Install the project
-              run: make install
+              run: cd avito-tech && makemake install
 
             - name: Run linter
-              run: make lint
+              run: cd avito-tech && make lint
 
             - name: Run tests
-              run: make test
+              run: cd avito-tech && make test
