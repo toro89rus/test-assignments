@@ -2,7 +2,7 @@ install:
 	uv sync
 
 lint:
-	uv run ruff check get_matrix tests
+	uv run ruff check matrix tests
 
 test:
 	uv run pytest
