@@ -3,7 +3,7 @@ import asyncio  # noqa: F401
 import pytest
 from aioresponses import aioresponses
 
-from get_matrix.get_matrix import (
+from matrix import (
     get_matrix,
     get_snail_ccw_path,
     parse_matrix_string,
