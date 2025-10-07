@@ -23,8 +23,8 @@ EXCEPTION_MAP = {
 
 def parse_matrix_string(matrix_string: str) -> list[list[int]]:
     matrix_list = []
-    for line in matrix_string.splitlines()[1::2]:  # Skip borders
-        # Skip empty cells
+    for line in matrix_string.splitlines()[1::2]:  # skip borders
+        # skip empty cells
         cells = [cell.strip() for cell in line.split("|")[1:-1]]
         matrix_row = [int(cell) for cell in cells]
         matrix_list.append(matrix_row)
